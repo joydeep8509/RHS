@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RHS Connects - My Panel</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header class="header">
+    <div class="header-inner">
+<div class="logo" onclick="location.href='index.html'">
+    <span class="logo-icon">🏠</span>
+    <span class="logo-text">RHS<br><small>CONNECTS</small></span>
+</div>
+
+
+        <button class="notification-btn">🔔</button>
+    </div>
+
+    <div class="location-bar">
+        <span class="location-icon">📍</span>
+        <span class="location-text">Location not set</span>
+        <a href="#" class="set-location">Set location</a>
+    </div>
+</header>
+
+    <div class="panel-tabs">
+        <button class="panel-tab active" onclick="showPanelTab('leads')">My Leads</button>
+        <button class="panel-tab" onclick="showPanelTab('listings')">My Listings</button>
+    </div>
+
+    <main class="panel-content">
+        <div id="leads-content">
+            <h2>My Leads</h2>
+            
+            <div class="lead-card">
+                <div class="lead-info">
+                    <h3>Rahul Sharma</h3>
+                    <p class="lead-details">Interested in: 2 BHK Apartment</p>
+                    <p class="location">📍 Whitefield, Bangalore</p>
+                </div>
+                <button class="status-badge status-new">New</button>
+            </div>
+
+            <div class="lead-card">
+                <div class="lead-info">
+                    <h3>Anita Verma</h3>
+                    <p class="lead-details">Interested in: Girls Hostel</p>
+                    <p class="location">📍 Gachibowli, Hyderabad</p>
+                </div>
+                <button class="status-badge status-contacted">Contacted</button>
+            </div>
+
+            <div class="lead-card">
+                <div class="lead-info">
+                    <h3>Suresh Kumar</h3>
+                    <p class="lead-details">Interested in: 1 BHK Apartment</p>
+                    <p class="location">📍 Noida Sector 62</p>
+                </div>
+                <button class="status-badge status-closed">Closed</button>
+            </div>
+        </div>
+
+        <div id="listings-content" style="display: none;">
+            <h2>My Listings</h2>
+            
+            <div class="listing-card">
+                <div class="listing-info">
+                    <h3>2 BHK Apartment</h3>
+                    <p class="listing-details">Whitefield, Bangalore</p>
+                    <p class="location">₹ 78 Lakh</p>
+                </div>
+                <button class="status-badge status-active">Active</button>
+            </div>
+
+            <div class="listing-card">
+                <div class="listing-info">
+                    <h3>1 BHK Apartment</h3>
+                    <p class="listing-details">Gachibowli, Hyderabad</p>
+                    <p class="location">₹ 45 Lakh</p>
+                </div>
+                <button class="status-badge status-pending">Pending</button>
+            </div>
+
+            <div class="listing-card">
+                <div class="listing-info">
+                    <h3>Boys Hostel</h3>
+                    <p class="listing-details">Madhapur, Hyderabad</p>
+                    <p class="location">₹ 7,500 / month</p>
+                </div>
+                <button class="status-badge status-inactive">Inactive</button>
+            </div>
+        </div>
+    </main>
+
+    <nav class="bottom-nav">
+        <a href="index.html" class="nav-item">
+            <span class="nav-icon">🏠</span>
+            <span class="nav-label">Home</span>
+        </a>
+        <a href="liked.html" class="nav-item">
+            <span class="nav-icon">❤️</span>
+            <span class="nav-label">Liked</span>
+        </a>
+        <a href="login.html" class="nav-item">
+            <span class="nav-icon">🔑</span>
+            <span class="nav-label">Login</span>
+        </a>
+        <a href="my-panel.html" class="nav-item active">
+            <span class="nav-icon">📊</span>
+            <span class="nav-label">My Panel</span>
+        </a>
+        <a href="profile.html" class="nav-item">
+            <span class="nav-icon">👤</span>
+            <span class="nav-label">Profile</span>
+        </a>
+    </nav>
+
+    <script src="script.js"></script>
+</body>
+</html>
